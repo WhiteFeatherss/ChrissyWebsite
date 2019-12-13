@@ -1,0 +1,121 @@
+/*BEGINNING*/
+/*END*/
+
+.presentation 
+{
+    width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    -webkit-box-shadow: -4px 3px 5px 0px rgba(0,0,0,0.67);
+    border-top: 8px inset rgba(28,110,164,0.23);
+    border-radius: 0px 40px 0px 0px;
+    margin-top: 10rem;
+    position: relative;
+}
+
+.WritingSpot {
+    width: 55rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    margin-top: 3rem;
+    position: relative;
+    
+}
+
+pres_h1 
+{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+pres_h2 
+{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+br 
+{
+    line-height: 55rem
+}
+
+
+figure 
+{
+    background-color: #F2EDED;
+    border: 1rem solid #cccccc;
+    text-align: center;
+    padding: 1rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-top: 2rem;
+}
+figcaption 
+{
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+p 
+{
+    padding: 0 45px;
+    text-indent: 15px;
+    text-align: justify;
+}
+ul
+{
+   text-align: center;
+   list-style-position:inside;
+}
+
+.container 
+{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.social a
+{
+    height: 512px;
+    width: 512px;
+    display: block;
+    text-indent: -9999px;
+    background:center;
+}
+
+
+.social a[href*="facebook.com"] {
+    background-image: url(../Images/facebook.png);
+}
+
+.social a[href*="mailto:"] {
+    background-image: url(../Images/GoogleLogo.png);
+}
+
+.social a[href*="github.com"] {
+    background-image: url(../Images/GitHubLogo.png);
+}
+
+.column 
+{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.row::after 
+{
+    content: "";
+    clear: both;
+    display: table;
+}

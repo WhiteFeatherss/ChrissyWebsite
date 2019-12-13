@@ -1,0 +1,184 @@
+﻿<!-- BEGIN -->
+<!-- END -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>My WebPage</title>
+
+    <!-- CSS BEGIN -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/Banner.css" />
+    <link rel="stylesheet" href="css/Home.css" />
+    <!-- CSS END -->
+
+    <script>
+
+        function Show(Page_Name) //Display desired element.//
+        {
+            hide();
+            return document.getElementById(Page_Name).style.display = 'block';            
+        }
+
+        function hide() // Hide every elements from the page.//
+        {
+            document.getElementById("Page_Home").style.display = 'none';
+            document.getElementById("Page_Personal").style.display = 'none';
+            document.getElementById("Page_Interests").style.display = 'none';
+            document.getElementById("Page_Contact").style.display = 'none';
+            document.getElementById("Page_CV").style.display = 'none';
+        }
+
+    </script>
+
+</head>
+<body>
+    <!-- BANNER BEGIN -->
+    <nav class="menu">
+        <ol>
+            <!-- HOME BEGIN -->
+            <li class="menu-item"><a href="#0" onclick="return Show('Page_Home')">Home</a></li>
+            <!-- HOME END -->
+            <!-- ABOUT MYSELF BEGIN -->
+            <li class="menu-item">
+                <a href="#0">About Myself</a>
+                <!-- SUBMENU BEGIN -->
+                <ol class="sub-menu">
+                    <li class="menu-item"><a href="#0" onclick="return Show('Page_Personal')">Personal Informations</a></li>
+                    <li class="menu-item"><a href="#0" onclick="return Show('Page_Interests')">Interests</a></li>
+                </ol>
+                <!-- SUBMENU END -->
+            </li>
+            <!-- ABOUT MYSELF END -->
+            <!-- CONTACT BEGIN -->
+            <li class="menu-item">
+                <a href="#0">Contact</a>
+                <!-- SUBMENU BEGIN -->
+                <ol class="sub-menu">
+                    <li class="menu-item"><a href="#0" onclick="return Show('Page_Contact')">Where to contact me</a></li>
+                    <li class="menu-item"><a href="#0" onclick="return Show('Page_CV')">Curriculum Vitae</a></li>
+                </ol>
+                <!-- SUBMENU END -->
+            </li>
+            <!-- CONTACT END -->
+        </ol>
+    </nav>
+    <!-- BANNER END -->
+    <!-- HOME PAGE BEGIN -->
+    <div id="Page_Home" style="display:none">
+        <nav class="presentation">
+            <pres_h1>
+                <pre>
+    Christopher Hémond
+    No. Étudiant 1811909
+
+
+
+
+    Projet de Session
+    Créez un site Web vous présentant
+
+
+
+    
+    Présenté à
+    Ramiro Affonso De Tadeu Guerreiro
+
+        
+
+
+    PROGRAMMATION INTERNET I
+    Groupe 07157
+
+      
+
+
+    Collège LaSalle Montréal
+    Le 10 Décembre 2019
+                </pre>
+            </pres_h1>
+
+        </nav>
+    </div>
+    <!-- HOME PAGE END -->
+    <!-- PERSONAL PAGE BEGIN -->
+    <div id="Page_Personal" style="display: none">
+
+        <figure>
+            <img src="Images/Sherbrooke.jpg">
+            <figcaption>My Hometown - Sherbrooke</figcaption>
+        </figure>
+        
+        <nav class="WritingSpot">
+            <pres_h2>
+                <p>
+                <pres_h1>A bit of myself</pres_h1>
+                I originally joined College in Natural Sciences, although I have a strong affinity for science and the likes, I quickly realized that it wasn't the place for me. I still enjoy science and its wonders but from an science enthusiast point of view. <br /><br />
+                I then proceeded to join a program called Tremplin DEC, which I immediatly regretted. It is a program where you only basic course in College and nothing else, I've had no motivation to learn at that point. 
+                <br /><br />
+                After a year of sabatical leave to a program I hated, I thought I've had finally found my vocation and joined a program where I stayed for 2 years in, called 'Technologie de systèmes ordinés', the program consisted of repairing, maintaining and or replacing old/new electronical equipement, servers and much more. Programming was an integral part of the said course, I grew fond of it, I enjoyed the problem solving and spending hours to fix tiny mistakes that I would make along the way. Even though I loved it, it wasn't exactly what I was looking for. So I went once again on a year of sabatical leave and decided to get into Video Game Programming, where I am now. 
+                <br /><br />
+                </p>
+            </pres_h2>
+        </nav>
+
+    </div>
+    <!-- PERSONAL PAGE END-->
+    <!-- INTERESTS PAGE BEGIN -->
+    <div id="Page_Interests" style="display: none">
+        <figure>
+            <img src="Images/VideoGames.jpg" height="70%" width="70%">
+            <nav class="WritingSpot">
+                <h2>
+                    <p>
+                        <pres_h1>My interests</pres_h1>
+                        <ul style="list-style-type: square;">
+                            <li>Being a couch potato</li>
+                            <li>Video Games</li>
+                            <li>Museums</li>
+                            <li>Reading</li>
+                            <li>Mangas</li>
+                            <li>Anime</li>
+                            <li>Music</li>
+
+                        </ul>
+                    </p>
+                </h2>
+            </nav>
+        </figure>
+    </div>
+    <!-- INTERESTS PAGE END-->
+    <!-- CONTACT PAGE BEGIN -->
+    <div id="Page_Contact" style="display: block">
+
+        <ul class="social">
+            <li>
+                <div class="row">
+                    <div class="column">
+                        <a href="https://www.facebook.com/christopher.hemond" style="width:90%" target="_blank">Facebook</a>
+                    </div>
+                    <div class="column">
+                        <a href="mailto:chrishemond94@gmail.com" style="width:90%">Google</a>
+                    </div>
+                    <div class="column">
+                        <a href="https://github.com/WhiteFeatherss" style="width:90%" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+    <!-- CONTACT PAGE END-->
+    <!-- CV PAGE BEGIN -->
+    <div id="Page_CV" style="display: none">
+        <pre>
+            <h1>
+                Soon
+            </h1>
+        
+        </pre>
+    </div>
+    <!-- CV PAGE END-->    
+</body>
+</html>
